@@ -1,76 +1,149 @@
-# NEXUS — AI-Powered Assistant
+# ⚡ NEXUS — AI-Powered Assistant
 
-> A frontend AI productivity app built with React + Tailwind CSS + Claude API  
-> Submitted for AI & Future Technologies hackathon theme
+> Your intelligent co-pilot for research, writing, and thinking.  
+> Built with React + Tailwind CSS, powered by OpenRouter AI.
+
+![NEXUS Banner](https://img.shields.io/badge/NEXUS-AI%20Assistant-7C3AED?style=for-the-badge&logo=lightning&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-7C3AED?style=for-the-badge)
 
 ---
 
-## Features
+## 🚀 Live Demo
 
-- **AI Chat** — Conversational assistant powered by Claude Sonnet
-- **Smart Summarizer** — Summarize any text in 4 different styles
-- **Beautiful Dark UI** — Space-themed design with neon accents
+🔗 **[nexus-ai-assistant-rho.vercel.app](https://nexus-ai-assistant-rho.vercel.app)**
 
-## Tech Stack
+---
 
-- React 18
-- Tailwind CSS 3
-- Anthropic Claude API (claude-sonnet-4-6)
-- Lucide React (icons)
-- React Markdown
+## ✨ Features
 
-## Setup
+| Feature | Description |
+|--------|-------------|
+| 🤖 **AI Chat** | Conversational assistant for research, coding & writing |
+| 📄 **Smart Summarizer** | Summarize any text in 4 different styles |
+| 🎨 **Beautiful Dark UI** | Space-themed neon design with smooth animations |
+| ⚡ **Context-Aware** | Remembers your conversation history |
+| 📱 **Responsive** | Works on all screen sizes |
 
-1. **Clone / download this project**
+---
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## 🛠️ Tech Stack
 
-3. **Configure environment**
-   ```bash
-   cp .env.example .env
-   ```
-   Then open `.env` and replace `your_anthropic_api_key_here` with your actual key from [console.anthropic.com](https://console.anthropic.com).
+- **Frontend:** React 18, Tailwind CSS 3
+- **AI:** OpenRouter API (Google Gemini via openrouter/auto)
+- **Icons:** Lucide React
+- **Markdown:** React Markdown
+- **Deployment:** Vercel
 
-4. **Run the app**
-   ```bash
-   npm start
-   ```
-   Opens at [http://localhost:3000](http://localhost:3000)
+---
 
-5. **Build for production**
-   ```bash
-   npm run build
-   ```
+## 📁 Project Structure
 
-## Deploy to Vercel
-
-1. Push to GitHub (make sure `.env` is in `.gitignore`)
-2. Import repo on [vercel.com](https://vercel.com)
-3. Add `REACT_APP_ANTHROPIC_API_KEY` in Vercel → Settings → Environment Variables
-4. Deploy!
-
-## Project Structure
-
-```
 src/
+
 ├── components/
-│   └── Sidebar.jsx        # Navigation sidebar
+
+│   └── Sidebar.jsx        # Collapsible navigation sidebar
+
 ├── hooks/
-│   └── useClaudeAPI.js    # Anthropic API hook
+
+│   └── useClaudeAPI.js    # OpenRouter API integration
+
 ├── pages/
+
 │   ├── LandingPage.jsx    # Hero landing screen
+
 │   ├── ChatPage.jsx       # AI chat interface
-│   └── SummarizerPage.jsx # Text summarizer
+
+│   └── SummarizerPage.jsx # 4-mode text summarizer
+
 ├── App.jsx
+
 ├── index.js
+
 └── index.css
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/sapnajha757/nexus-ai-assistant.git
+cd nexus-ai-assistant/ai-assistant-app
 ```
 
-## Security Note
+### 2. Install dependencies
+```bash
+npm install
+```
 
-- Never commit your `.env` file with a real API key
-- The `.gitignore` already excludes `.env`
-- For production, add your key as an environment variable in Vercel/Netlify
+### 3. Configure environment
+```bash
+cp .env.example .env
+```
+Open `.env` and add your OpenRouter API key:
+REACT_APP_OPENROUTER_API_KEY=sk-or-xxxxxxxxxxxxxxxxxx
+
+> 🔑 Get your free API key at [openrouter.ai](https://openrouter.ai)
+
+### 4. Run locally
+```bash
+npm start
+```
+Opens at [http://localhost:3000](http://localhost:3000)
+
+### 5. Build for production
+```bash
+npm run build
+```
+
+---
+
+## 🌐 Deploy on Vercel
+
+1. Push to GitHub
+2. Import repo at [vercel.com](https://vercel.com)
+3. Set **Root Directory** → `ai-assistant-app`
+4. Add Environment Variable:
+   - `REACT_APP_OPENROUTER_API_KEY` = your key
+5. Click **Deploy** 🚀
+
+---
+
+## 🎯 Hackathon Submission
+
+**Theme:** AI & Future Technologies  
+**Category:** Frontend Development  
+**Event:** Build The Next Big UI — 2026
+
+### Problem Statement
+Information overload is a growing challenge. People spend hours researching, reading, and synthesizing data — with no intelligent assistant to help them think faster.
+
+### Solution
+NEXUS is an AI-powered productivity assistant that lets users chat with an intelligent AI, summarize long documents instantly, and accelerate their thinking — all in a beautiful, distraction-free interface.
+
+### Impact
+- ⏱️ Saves hours of research time
+- 🧠 Enhances decision-making with AI assistance
+- 🌍 Accessible to anyone with a browser — no setup required
+
+---
+
+## 🔐 Security
+
+- API key stored in `.env` (never committed to Git)
+- `.gitignore` excludes all `.env` files
+- No sensitive data stored in the browser
+
+---
+
+## 👩‍💻 Author
+
+**Sapna Jha**  
+GitHub: [@sapnajha757](https://github.com/sapnajha757)
+
+---
+
+Made with ❤️ for the hackathon
