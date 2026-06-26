@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FileText, Wand2, Copy, Check, AlertCircle, ChevronDown } from 'lucide-react';
+import { FileText, Wand2, Copy, Check, AlertCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { useClaudeAPI } from '../hooks/useClaudeAPI';
 
